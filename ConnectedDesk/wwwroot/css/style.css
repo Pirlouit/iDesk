@@ -1,0 +1,265 @@
+body{
+    font-family: "Roboto";
+    margin: 0 auto;
+    background-size: cover;
+    line-height: 60px !important;
+    color: rgba(00, 00, 00, 0.5);
+    background-image: url('../images/background.jpg');
+}
+
+h6{
+    margin: 0px;
+}
+
+.all-space{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+hr{
+    margin: 0;
+}
+
+.content{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.creux-effect{
+    text-shadow: -1px -2px 0 rgba(0,0,0,0.4), 1px 2px 0 rgba(255,255,255,1);
+    color: #d1d9df;
+}
+
+.mg-left-less-15{
+    margin-left: -15px;
+}
+
+.mdl-button--fab
+{
+    background: transparent;
+    box-shadow: none;
+}
+
+.material-icons-align {
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+/*************************/
+/*        INDEX          */  
+/**************************/
+
+#nav-bar-left{
+    position: absolute;
+    top: 30px;
+    bottom: 5%;
+    width: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*** MOMENT ***/
+#moment {
+    position: absolute;
+    top: 30px; /* poussé de la moitié de hauteur du référent */
+    right: 0%; 
+    padding: 30px;
+    width: 260px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#moment-date{
+    font-size: 40px;
+    text-align: center;
+}
+#moment-hour{
+    text-align: center;
+    font-size: 70px;
+    height: 70px;
+}
+
+
+/** email **/
+#email-icon {
+
+}
+
+#email-username {
+}
+
+#email-adress {
+}
+
+#email-title {
+    text-align: center;
+}
+
+#email-body {
+
+}
+
+/** Weather **/
+#weather {
+    position: absolute;
+    bottom: 5%;
+    right: 0%;
+    font-size: 20px;
+    width: 280px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#weather-content-description{
+
+    height: 20px;
+}
+
+#weahter-icon{
+    float:left; 
+    margin-left: 60px;
+}
+#weather-description{
+    margin-left: 10px;
+    float:left ; 
+}
+#weather-temperature-value, #weather-humidity-value{
+    margin-left: 10px;
+}
+#weather-content-details{
+    margin: 10px;
+    display: inline;
+}
+
+#weahter-temperature{
+    float:left; 
+    margin-left: 60px;
+}
+#weather-humidity{
+    float:left; 
+    margin-left: 40px;
+}
+
+#weather-city{
+    font-size: 70px;
+    text-align: center;
+}
+
+#calendar-title{
+    text-align: center;
+    margin: 0px;
+}
+
+#calendar-metting{
+    text-align: center;
+}
+
+
+
+/*** building***/
+#building {
+    position: absolute;
+    bottom: 350px;
+    right: 0%;
+    font-size: 20px;
+    width: 280px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 0px;
+}
+
+#building-temperature-value {
+    margin-left: 10px;
+}
+#building-humidity-value {
+    margin-left: 10px;
+}
+#building-luminosity-value {
+    margin-left: 10px;
+}
+
+#building-content-details {
+    display: inline;
+}
+
+#building-temperature {
+    float: left;
+}
+
+#building-humidity {
+    float: left;
+    margin-left: 30px;
+}
+
+#building-luminosity {
+    float: left;
+    margin-left: 50px;
+}
+/*** Center ***/
+#email-content {
+    position: absolute;
+    top: 30px;
+    bottom: 5%;
+    left: 100px;
+    right: 350px;
+    border-radius: 5px;
+    display: none;
+}
+
+/*** notificaton  ***/
+
+#calendar-content{
+    position: absolute;
+    top: 107px;
+    left: 80px;
+    width: 400px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+#rappel-content{
+    position: absolute;
+    top: 167px;
+    left: 80px;
+    width: 200px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+#notification-content{
+    position: absolute;
+    top: 227px;
+    left: 80px;
+    width: 200px;
+    border-radius: 5px;
+    display: none;
+}
+
+/********/
+#smart-lock {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.material-icons-giga {
+    color: #a1a1a1;
+    font-size: 800px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}

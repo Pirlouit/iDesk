@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "ConnectedDesk";
+}
+<div id="index" class="all-space">
+    <div id="moment" class="content creux-effect">
+        <div id="moment-hour"></div>
+        <div id="moment-date"></div>
+    </div>
+    <div id="weather" class="content">
+        <div>
+            <h2 id="weather-city" class="creux-effect"></h2>
+            <div id="weather-desc-content">
+                <div id="weather-content-description">
+                    <div id="weahter-icon"><i></i></div>
+                    <div id="weather-description"></div>
+                </div>
+            </div>
+            <div id="weather-details-content">
+                <div id="weather-content-details">
+                    <div id="weahter-temperature"><i class="wi wi-thermometer"></i><span id="weather-temperature-value"></span></div>
+                    <div id="weather-humidity"><i class="wi wi-humidity"></i><span id="weather-humidity-value"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="building" class="content">
+        <div>
+            <h2 id="building-city" class="creux-effect"></h2>
+            <div id="building-desc-content">
+                <div id="building-content-description">
+                    <div><i class="material-icons material-icons-align">account_balance</i> Environnement</div>
+                </div>
+            </div>
+            <div id="building-details-content">
+                <div id="building-content-details">
+                    <div id="building-temperature"><i class="wi wi-thermometer"></i><span id="building-temperature-value"></span></div>
+                    <div id="building-humidity"><i class="wi wi-humidity"></i><span id="building-humidity-value"></span></div>
+                    <div id="building-luminosity"><i class="wi wi-horizon-alt"></i><span id="building-luminosity-value"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Left navbar -->
+    <div id="nav-bar-left" class="content">
+        <div id="email" class="mg-left-less-15">
+            <button class="mdl-button mdl-js-button mdl-button--fab">
+                <div class="material-icons mdl-badge mdl-badge--overlap" id="email-indication">email</div>
+            </button>
+        </div>
+        <div id="event" class="mg-left-less-15">
+            <button class="mdl-button mdl-js-button mdl-button--fab">
+                <div class="material-icons mdl-badge mdl-badge--overlap" id="calendar-indication">event</div>
+            </button>
+        </div>
+        <div id="rappel" class="mg-left-less-15">
+            <button class="mdl-button mdl-js-button mdl-button--fab">
+                <div class="material-icons mdl-badge mdl-badge--overlap" id="rappel-indication">alarm</div>
+            </button>
+        </div>
+        <div id="notification" class="mg-left-less-15">
+            <button class="mdl-button mdl-js-button mdl-button--fab">
+                <div class="material-icons mdl-badge mdl-badge--overlap" id="notification-indication">sms_failed</div>
+            </button>
+        </div>
+    </div>
+
+    <!-- EMAIL -->
+
+    <div id="email-content" class="content">
+        <h4 id="mail-icon"><i class="material-icons material-icons-align">mail</i>email</h4>
+        <div>
+            <div>
+                <span><i class="material-icons">account_circle</i></span><span id="email-username"></span>(<span id="email-adress"></span>)
+            </div>
+        </div>
+        <div>
+            <hr>
+            <h2 id="email-title"></h2>
+            <hr>
+            <p id="email-body" style="margin-top: 20px; overflow: auto;"></p>
+        </div>
+    </div>
+
+    <!-- CALENDAR -->
+    <div id="calendar-content" class="content">
+        <div>
+            <div>
+                <h6><i class="material-icons material-icons-align">event</i> Calendrier</h6>
+                <h3 id="calendar-title"></h3>
+                <p id="calendar-metting">Vous avez un événement de <span id="calendar-start"></span> à <span id="calendar-end"></span></p>
+                <hr>
+                <p id="calendar-description"></p>
+            </div>
+        </div>
+    </div>
+    <!-- RAPPEL -->
+    <div id="rappel-content" class="content">
+        <div>
+            <div>
+                <h6><i class="material-icons material-icons-align">alarm</i> Rappel</h6>
+                <span id="rappel-date"></span>
+                <p id="rappel-body"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Notification -->
+    <div id="notification-content" class="content">
+        <div>
+            <div>
+                <h6><i class="material-icons material-icons-align">sms_failed</i> Nouvelle notification</h6>
+                <i class="material-icons material-icons-align">account_circle</i>
+                <span id="notification-from"></span>
+                <p id="notification-body"></p>
+            </div>
+        </div>
+    </div>
+
+    <!--LOCK_-->
+    <div id="smart-lock">
+        <div>
+            <i class="material-icons material-icons-giga">lock</i>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ConnectedDesk</title>
+
+    <link rel="manifest" href="~/manifest.json" />
+    <meta name="theme-color" content="#8D6A9E">
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!--MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="~/css/weather-icons.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <!--dependencies js-->
+    <script src="~/js/moment-with-locales.js"></script>
+    <script type="text/javascript" src="~/js/Artyom.js"></script>
+    <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+    <!--Scripts-->
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="~/js/weatherIcons.js"></script>
+    <script type="text/javascript" src="~/js/compoment-weather.js"></script>
+    <script type="text/javascript" src="~/js/compoment-calendar.js"></script>
+    <script type="text/javascript" src="~/js/compoment-rappel.js"></script>
+    <script type="text/javascript" src="~/js/compoment-notification.js"></script>
+    <script type="text/javascript" src="~/js/compoment-email.js"></script>
+    <script type="text/javascript" src="~/js/smartDesk.js"></script>
+
+    <script type="text/javascript" src="~/js/ConnectedDesk.js"></script>
+    <script type="text/javascript" src="~/js/SpeechReco.js"></script>
+    <script type="text/javascript" src="~/js/Outlook.js"></script>
+    <script type="text/javascript" src="~/js/techoffice.js"></script>
+</head>
+<body>
+    @RenderBody()
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

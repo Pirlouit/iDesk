@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "SendNotification";
+}
+
+<div>
+    <br />
+    <br />
+    <label for="inputNotif">Notification</label>
+    <br />
+    <input type="text" colspan="50" id="inputNotif" placeholder="Type your notification here." />
+    <br />
+    <br />
+    <label for="inputNotif">Your name</label>
+    <br />
+    <input type="text" colspan="50" id="inputName" placeholder="Type your name here." />
+    <br />
+    <br />
+    <label for="inputNotif">Priority</label>
+    <br />
+    <select id="inputPriority">
+        <option value="0">Low</option>
+        <option value="1">Medium</option>
+        <option value="2">High</option>
+    </select>
+    <br />
+    <br />
+    <input type="button" value="Send" id="buttonSend"/>
+    <br />
+    <br />
+</div>
+<div>
+    <h1>Remote</h1>
+    <button id="button-lock" value="lock">lock</button>
+</div>
+<script type="text/javascript" src="~/js/SendNotification.js"></script>
