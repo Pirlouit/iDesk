@@ -1,5 +1,5 @@
 # iDesk
-Smart Desktop made during the hackthon Tech'Office at Microsoft Innovation Center Belgique
+Smart Desktop made during the hackathon Tech'Office at Microsoft Innovation Center Belgique.
 
 ![iDesk flyer](https://image.ibb.co/gpm5wx/iDesk.png)
 
