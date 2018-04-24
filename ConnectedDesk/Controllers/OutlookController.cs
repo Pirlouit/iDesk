@@ -88,7 +88,7 @@ namespace ConnectedDesk.Controllers
 
             foreach(var r in reminderList)
             {
-                if(r.Time.Minute == DateTime.Now.Minute)
+                if(r.Time.Hour == DateTime.Now.Hour && r.Time.Minute == DateTime.Now.Minute)
                 {
                     // SEND NOTIFICATION TO DESKTOP
                     var notif = r;
