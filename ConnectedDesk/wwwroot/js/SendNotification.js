@@ -8,6 +8,7 @@ window.onload = function() {
     document.querySelector('#button-lock').onclick = function () {
         let button = document.querySelector('#button-lock');
         let res = {
+            Key:"locked",
             type: "lock",
             value: button.value
         }
@@ -26,7 +27,7 @@ window.onload = function() {
 
 //Init
 function initWebSockets() {
-    webSocket = new WebSocket("wss://" + location.host + "/ws/NotificationServer/");
+    webSocket = new WebSocket("ws://" + location.host + "/ws/NotificationServer/");
     webSocket.onopen = (evt) => { this.socketOpen(evt); };
     webSocket.onmessage = (evt) => { this.socketMessage(evt); };
     webSocket.onerror = (evt) => { this.socketError(evt); };
@@ -65,6 +66,7 @@ function validateInputsAndSend() {
     var prio = document.getElementById("inputPriority");
 
     var res = {
+        Key : "notification",
         Sender : nameFinal,
         Priority : prio.selectedIndex,
         Message : inputFinal

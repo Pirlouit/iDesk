@@ -49,6 +49,8 @@ namespace ConnectedDesk.Controllers.WebSockets {
         //Handle Socket Events
         private async Task OnOpenAsync(WebSocket currentSocket) {
             AllSockets.Add(currentSocket);
+            await SocketSendAsync(currentSocket, "{\"Key\":\"techOffice\",\"techOffice\": \"" + Startup.Configuration["TechOffice"] + "\"}");
+            await SocketSendAsync(currentSocket, "{\"Key\":\"openWeatherMap\",\"openWeatherMap\": \"" + Startup.Configuration["OpenWeatherMap"] + "\"}");
         }
         private async Task OnMessageAsync(string msg, WebSocket currentSocket) {            
             await SocketBroadcast(msg);

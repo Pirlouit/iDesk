@@ -7,6 +7,7 @@ namespace ConnectedDesk.Models
 {
     public class Notification
     {
+        public string Key { get; set; }
         public string Sender { get; set; }
         public int Priority { get; set; }
         public string Message { get; set; }

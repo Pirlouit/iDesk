@@ -69,7 +69,7 @@ hr{
     top: 30px; /* poussé de la moitié de hauteur du référent */
     right: 0%; 
     padding: 30px;
-    width: 260px;
+    width: 280px;
 
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -110,7 +110,7 @@ hr{
     bottom: 200px;
     right: 0%;
     font-size: 20px;
-    width: 280px;
+    width: 300px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -126,14 +126,15 @@ hr{
 
 #weahter-temperature{
     float:left; 
+    margin-left: 10px;
 }
 #weather-humidity{
     float:left; 
-    margin-left: 20px;
+    margin-left: 10px;
 }
 #weahter-icon {
     float: left;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #weather-description {
@@ -163,7 +164,7 @@ hr{
     right: 0%;
     bottom: 5%;
     font-size: 20px;
-    width: 280px;
+    width: 300px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     padding-top: 0px;

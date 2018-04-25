@@ -68,6 +68,7 @@ namespace ConnectedDesk.Controllers
         [Route("AddReminder")]
         public async Task<IActionResult> AddReminder(Reminder reminder)
         {
+            reminder.Key = "reminder";
             reminderList.Add(reminder);
             return Ok("Reminder set.");
         }

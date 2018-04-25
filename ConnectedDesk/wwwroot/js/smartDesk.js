@@ -1,35 +1,32 @@
 let site;
 
-window.onload = function(){
+window.onload = function() {
+    initWebSockets();
     site = new SmartDesk();
-    site.init();
-
 }
 
 function SmartDesk(){
     let self = this;
-    this.weather;
+    this.weather = null;
     this.techoffice = null;
 
     this.init = function () {
-       initWebSockets();
-       this.defineMoment();
-       this.weather = new Weather("e27f72131a7a8bfd7995ad841b9c080a");
-       this.weather.init();
+        if (this.weather != null && this.techoffice != null) {
+            this.defineMoment();
+            this.weather.init();
+            this.techoffice.getDataByDeviceId(this.callbackTechOffice, 13, 4);
 
-       this.techoffice = new techOffice("a6e7313b-5926-4403-babc-08d59f923971");
-       this.techoffice.getDataByDeviceId(this.callbackTechOffice, 13, 4);
-
-        /* $.getJSON("https://query.yahooapis.com/v1/public/yql", {
-                  q:      "select * from json where url='https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=be-FR'",
-                  format: "json"
-              },
-              function (data) {
-                  if (data.query.results) {
-                      document.body.style.backgroundImage = "url('https://bing.be/"+data.query.results.json.images.url+"')";
+            /* $.getJSON("https://query.yahooapis.com/v1/public/yql", {
+                      q:      "select * from json where url='https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=be-FR'",
+                      format: "json"
+                  },
+                  function (data) {
+                      if (data.query.results) {
+                          document.body.style.backgroundImage = "url('https://bing.be/"+data.query.results.json.images.url+"')";
+                      }
                   }
-              }
-          );*/
+              );*/
+        } 
     };
 
     this.callbackTechOffice = function(response) {
